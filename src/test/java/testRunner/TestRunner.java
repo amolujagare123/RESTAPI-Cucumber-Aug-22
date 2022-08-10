@@ -5,8 +5,9 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "Features"
-        , glue="stepdefinition")
+@CucumberOptions(features = "Features/Login2.feature"
+        , glue="stepdefinition"
+,tags = "@Subscription")
 
 public class TestRunner {
 }

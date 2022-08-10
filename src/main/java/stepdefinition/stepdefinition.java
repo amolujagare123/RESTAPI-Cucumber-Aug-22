@@ -6,7 +6,7 @@ import io.cucumber.java.en.When;
 
 public class stepdefinition {
 
-    @Given("Login page should be opened")
+   /* @Given("Login page should be opened")
     public void login_page_should_be_opened() {
         System.out.println("Login page should be opened");
     }
@@ -24,5 +24,5 @@ public class stepdefinition {
     @Then("I should be redirected to home page")
     public void i_should_be_redirected_to_home_page() {
         System.out.println("I should be redirected to home page");
-    }
+    }*/
 }
