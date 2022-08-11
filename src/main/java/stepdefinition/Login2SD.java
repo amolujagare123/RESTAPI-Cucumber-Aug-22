@@ -41,12 +41,16 @@ public class Login2SD {
         System.out.println("I should get an another error");
     }
 
+
+
+
     @When("I enter {string} and {string} on billing page")
     public void iEnterAndOnBillingPage(String username, String password) {
         System.out.println("username="+username);
         System.out.println("password="+password);
 
     }
+
 
 
 

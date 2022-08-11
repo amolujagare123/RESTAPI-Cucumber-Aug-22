@@ -5,9 +5,12 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "Features/Login2.feature"
+@CucumberOptions(features = "Features"
         , glue="stepdefinition"
-,tags = "@Subscription")
+        , plugin = {"pretty","html:target/report.html"}
+//,tags = "@blank"
+//, dryRun = true // runs only unimplemented steps
+)
 
 public class TestRunner {
 }

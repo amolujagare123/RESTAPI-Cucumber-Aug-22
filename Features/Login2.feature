@@ -1,7 +1,10 @@
 Feature: All login tests on billing page
 
+Background: opening a browser
+  Given I open the browser
+  And I maximize it
 
-  @login
+  @login @valid
   Scenario: To test the functionality of login button for valid input on billing page
     Given Billing Login page should be opened
   #  When I enter correct username and correct password on billing page
@@ -9,7 +12,7 @@ Feature: All login tests on billing page
     And I click on login button on billing page
     Then I should be redirected to home page of billing application
 
-  @login
+  @login @invalid @common
   Scenario: To test the functionality of login button for invalid input on billing page
     Given Billing Login page should be opened
   #  When I enter incorrect username and incorrect password on billing page
@@ -17,7 +20,7 @@ Feature: All login tests on billing page
     And I click on login button on billing page
     Then I should get an error
 
-  @login
+  @login @blank  @common
   Scenario: To test the functionality of login button for blank input on billing page
     Given Billing Login page should be opened
     # When I dont enter username and password on billing page
